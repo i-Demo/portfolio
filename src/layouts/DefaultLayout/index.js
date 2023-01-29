@@ -1,7 +1,6 @@
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeOpen, faMoon, faUser } from '@fortawesome/free-regular-svg-icons';
-import { faBriefcase, faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faEnvelope, faHouse, faUser, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 import Button from '~/components/Button';
 import styles from './DefaultLayout.module.scss';
@@ -12,22 +11,26 @@ function DefaultLayout({ children }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('list-menu')}>
-                <Button to="/">
+                <Button to="/" rounded className={cx('item-menu')}>
+                    <h2 className={cx('item-menu-title')}>Home</h2>
                     <FontAwesomeIcon icon={faHouse} />
                 </Button>
-                <Button to="/portfolio">
+                <Button to="/portfolio" rounded className={cx('item-menu')}>
+                    <h2 className={cx('item-menu-title')}>Portfolio</h2>
                     <FontAwesomeIcon icon={faBriefcase} />
                 </Button>
-                <Button to="/about">
+                <Button to="/about" rounded className={cx('item-menu')}>
+                    <h2 className={cx('item-menu-title')}>About</h2>
                     <FontAwesomeIcon icon={faUser} />
                 </Button>
-                <Button to="/contact">
-                    <FontAwesomeIcon icon={faEnvelopeOpen} />
+                <Button to="/contact" rounded className={cx('item-menu')}>
+                    <h2 className={cx('item-menu-title')}>Contact</h2>
+                    <FontAwesomeIcon icon={faEnvelope} />
                 </Button>
             </div>
 
             <div className={cx('toggle-theme')}>
-                <Button>
+                <Button className={cx('toggle-theme-btn')}>
                     <FontAwesomeIcon icon={faMoon} />
                 </Button>
             </div>
