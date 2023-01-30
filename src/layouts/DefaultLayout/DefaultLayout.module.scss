@@ -15,9 +15,13 @@
 
     .item-menu {
         position: relative;
+        transition: all 0.2s ease;
 
         .item-menu-title {
             position: absolute;
+            right: 0px;
+            top: 0;
+            opacity: 0;
             background-color: var(--main-color);
             border-radius: 30px;
             color: #fff;
@@ -27,12 +31,11 @@
             height: 50px;
             line-height: 50px;
             margin: 0;
-            opacity: 0;
             padding: 0 30px;
-            right: 0;
             text-transform: uppercase;
-            top: 0;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease-out;
+            text-align: center;
+
             z-index: -1;
         }
 
@@ -46,7 +49,6 @@
                 margin: 0;
                 opacity: 1;
                 right: 27px;
-                text-align: center;
             }
         }
     }

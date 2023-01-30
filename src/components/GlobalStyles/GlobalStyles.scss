@@ -29,7 +29,7 @@ html {
 
 body {
     font-family: var(--font-family);
-    font-size: 1.6rem;
+    // font-size: 1.6rem;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
     // overflow-y: overlay;
@@ -59,4 +59,12 @@ a[href] {
     font-family: SofiaPro;
     src: url('/assets/fonts/sofiapro-bold.woff2');
     font-weight: 700;
+}
+
+// Custom display icon cross in input search
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+    display: none;
 }
