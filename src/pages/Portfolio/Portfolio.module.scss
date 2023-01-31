@@ -1,0 +1,36 @@
+.main {
+}
+
+.page-header {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    padding: 7.5rem 0;
+    width: 100%;
+
+    h1 {
+        color: var(--main-color);
+        font-size: 52px;
+        font-weight: 900;
+        text-align: center;
+
+        & span {
+            color: var(--text-color);
+        }
+    }
+
+    & > span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--title-bg);
+        font-size: 110px;
+        font-weight: 800;
+        letter-spacing: 10px;
+        line-height: 0.7;
+    }
+}
