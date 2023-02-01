@@ -42,7 +42,7 @@ function Contact() {
                     <ul className={cx('contact-list')}>
                         <li>
                             <FontAwesomeIcon className={cx('contact-icon')} icon={faLocationDot} />
-                            <span>Address</span> Japan
+                            <span>Address</span> Tp. HCM, VietNam
                         </li>
                         <li>
                             <FontAwesomeIcon className={cx('contact-icon')} icon={faEnvelopeOpen} />
