@@ -9,6 +9,7 @@ function Button({
     to,
     href,
     rounded = false,
+    normal = false,
     primary = false,
     outline = false,
     text = false,
@@ -47,6 +48,7 @@ function Button({
 
     const classes = cx('wrapper', {
         primary,
+        normal,
         outline,
         text,
         upload,

@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
 import images from '~/assets/images';
-
+import Image from '~/components/Image';
 import Button from '~/components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +16,7 @@ function Home() {
             <div className={cx('wrapper')}>
                 <div className={cx('left-home')}>
                     <div className={cx('home-avatar')}>
-                        <img alt="avatar" src={images.avatar}></img>
+                        <Image alt="avatar" src={images.avatar} />
                     </div>
                 </div>
 
