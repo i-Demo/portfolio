@@ -1,10 +1,11 @@
-import classNames from 'classnames/bind';
-import styles from './Home.module.scss';
-import images from '~/assets/images';
-import Image from '~/components/Image';
-import Button from '~/components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import Button from '~/components/Button';
+import Image from '~/components/Image';
+import { images } from '~/assets/images';
+
+import classNames from 'classnames/bind';
+import styles from './Home.module.scss';
 
 const cx = classNames.bind(styles);
 

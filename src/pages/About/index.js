@@ -2,6 +2,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 import Button from '~/components/Button';
+import Image from '~/components/Image';
+import { logo } from '~/assets/images';
+
 import classNames from 'classnames/bind';
 import styles from './About.module.scss';
 
@@ -47,6 +50,49 @@ const INFORMATION = [
     {
         title: 'Email:',
         info: 'hoaivi.it@gmail.com',
+    },
+];
+
+const SKILLS = [
+    {
+        title: 'Html',
+        src: logo.html,
+    },
+    {
+        title: 'css',
+        src: logo.css,
+    },
+    {
+        title: 'sass',
+        src: logo.sass,
+    },
+    {
+        title: 'Javascript',
+        src: logo.js,
+    },
+    {
+        title: 'Bootstrap',
+        src: logo.bootstrap,
+    },
+    {
+        title: 'responsive web design',
+        src: logo.responsive,
+    },
+    {
+        title: 'react',
+        src: logo.react,
+    },
+    {
+        title: 'redux',
+        src: logo.redux,
+    },
+    {
+        title: 'git',
+        src: logo.git,
+    },
+    {
+        title: 'axios',
+        src: logo.axios,
     },
 ];
 
@@ -115,6 +161,27 @@ function About() {
                                 AWARD <span>WON</span>
                             </p>
                         </div>
+                    </div>
+                </div>
+
+                <hr className={cx('separator')} />
+
+                <div className={cx('skills')}>
+                    <h3 className={cx('skill-title')}>My Skills</h3>
+
+                    <div className={cx('skills-container')}>
+                        {SKILLS.map((skill, index) => {
+                            return (
+                                <div key={index} className={cx('skill')}>
+                                    <div className={cx('skill-wrapper')}>
+                                        <Image alt={skill.title} src={skill.src} className={cx('image')} />
+                                    </div>
+                                    <div className={cx('skill-name')}>
+                                        <h6>{skill.title}</h6>
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 
