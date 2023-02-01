@@ -32,7 +32,7 @@ function Home() {
                             Tp. HCM. Cơ duyên mình đến với IT là nhờ các sự tích "IT là vua của các nghề", hay câu
                             chuyện "thằng em học BK cơ khí sinh năm 96". Mình đã tìm tòi và học hỏi được nhiều kiến thức
                             về Web Developer (FE: ReactJs, BE: NodeJs), qua đó cũng có cho mình được một vài project thú
-                            vị. Với sức trẻ và sự sáng tạo mình đã sẵn sàng thực hiện những đam mê và đương đầu với
+                            vị. Với sức trẻ và sự sáng tạo, mình đã sẵn sàng thực hiện những đam mê và đương đầu với
                             những khó khăn, thử thách sắp tới trong tương lai. Fighting!
                         </p>
 
