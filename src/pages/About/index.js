@@ -122,7 +122,12 @@ function About() {
                                 );
                             })}
 
-                            <Button to="/portfolio" slide leftIcon={<FontAwesomeIcon icon={faDownload} />}>
+                            <Button
+                                href="https://drive.google.com/file/d/11v16ZXRyIwlk1zTtWB91AN1zn4hIuzaq/view?usp=sharing"
+                                target="_blank"
+                                slide
+                                leftIcon={<FontAwesomeIcon icon={faDownload} />}
+                            >
                                 <h2>Download Cv</h2>
                             </Button>
                         </ul>
@@ -167,7 +172,7 @@ function About() {
                 <hr className={cx('separator')} />
 
                 <div className={cx('skills')}>
-                    <h3 className={cx('skill-title')}>My Skills</h3>
+                    <h3 className={cx('title')}>My Skills</h3>
 
                     <div className={cx('skills-container')}>
                         {SKILLS.map((skill, index) => {
@@ -186,6 +191,10 @@ function About() {
                 </div>
 
                 <hr className={cx('separator')} />
+
+                <div className={cx('experience')}>
+                    <h3 className={cx('title')}>experience</h3>
+                </div>
             </div>
         </div>
     );

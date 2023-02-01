@@ -114,13 +114,6 @@
     }
 
     .skills {
-        .skill-title {
-            font-size: 26px;
-            text-align: center;
-            text-transform: uppercase;
-            margin-bottom: 45px;
-        }
-
         .skills-container {
             display: flex;
             align-items: center;
@@ -165,5 +158,12 @@
                 }
             }
         }
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 45px;
     }
 }
