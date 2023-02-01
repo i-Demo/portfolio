@@ -35,17 +35,11 @@ function Home() {
                             đóng góp đã truyền động lực cho mình suốt thời gian qua giúp mình không bỏ cuộc.
                         </p>
 
-                        <Button to="/portfolio" className={cx('home-btn')}>
-                            <div className={cx('icon')}>
-                                <FontAwesomeIcon icon={faArrowRight} />
-                            </div>
-                            <h2 className={cx('home-btn-title')}>Portfolio</h2>
+                        <Button to="/portfolio" slide leftIcon={<FontAwesomeIcon icon={faArrowRight} />}>
+                            <h2>Portfolio</h2>
                         </Button>
-                        <Button to="/about" className={cx('home-btn')}>
-                            <div className={cx('icon')}>
-                                <FontAwesomeIcon icon={faArrowRight} />
-                            </div>
-                            <h2 className={cx('home-btn-title')}>About</h2>
+                        <Button to="/about" slide leftIcon={<FontAwesomeIcon icon={faArrowRight} />}>
+                            <h2>About</h2>
                         </Button>
                     </div>
                 </div>

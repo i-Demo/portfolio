@@ -10,6 +10,7 @@ function Button({
     href,
     rounded = false,
     normal = false,
+    slide = false,
     primary = false,
     outline = false,
     text = false,
@@ -49,6 +50,7 @@ function Button({
     const classes = cx('wrapper', {
         primary,
         normal,
+        slide,
         outline,
         text,
         upload,
@@ -61,9 +63,9 @@ function Button({
 
     return (
         <Comp className={classes} {...props}>
-            {leftIcon && <span className={cx('icon')}>{leftIcon}</span>}
+            {leftIcon && <div className={cx('icon')}>{leftIcon}</div>}
             <span className={cx('title')}>{children}</span>
-            {rightIcon && <span className={cx('icon')}>{rightIcon}</span>}
+            {/* {rightIcon && <span className={cx('icon')}>{rightIcon}</span>} */}
         </Comp>
     );
 }

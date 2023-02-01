@@ -1,5 +1,9 @@
 @use 'sass:math';
 
+:root {
+    --tab-maxWidth: 1200px;
+}
+
 .main {
     padding: 0 3rem;
     margin: 45px;
@@ -20,11 +24,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    // justify-content: center;
+
     .tab-item {
         position: relative;
         border-radius: 4px;
         overflow: hidden;
-        width: calc(28vw - 30px);
+        width: 30.5%;
         height: 18vw;
         background-color: transparent;
         z-index: 1;
