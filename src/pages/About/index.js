@@ -13,19 +13,19 @@ const cx = classNames.bind(styles);
 const INFORMATION = [
     {
         title: 'First Name:',
-        info: 'Ho',
+        info: 'Vi',
     },
     {
         title: 'Last Name:',
-        info: 'Le Hoai Vi',
+        info: 'Ho',
     },
     {
         title: 'Birthday:',
-        info: '22 Years',
+        info: '23 Years',
     },
     {
         title: 'Gender:',
-        info: 'Mail',
+        info: 'Male',
     },
     {
         title: 'National:',

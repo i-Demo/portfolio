@@ -8,6 +8,7 @@ const cx = classNames.bind(styles);
 function Button({
     to,
     href,
+    animate = false,
     rounded = false,
     normal = false,
     slide = false,
@@ -49,6 +50,7 @@ function Button({
 
     const classes = cx('wrapper', {
         primary,
+        animate,
         normal,
         slide,
         outline,

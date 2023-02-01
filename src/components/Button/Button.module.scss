@@ -194,3 +194,37 @@
     width: 20px;
     height: 20px;
 }
+
+// Css Animation Icon
+.animate {
+    .icon {
+        animation: tada 1.5s ease infinite;
+    }
+}
+
+@keyframes tada {
+    0% {
+        transform: scaleX(1);
+    }
+    10%,
+    20% {
+        transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scaleX(1) rotate(10deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        // -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    100% {
+        // -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
