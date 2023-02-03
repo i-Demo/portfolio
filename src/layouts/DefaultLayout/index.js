@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import classNames from 'classnames/bind';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faEnvelope, faHouse, faUser, faMoon } from '@fortawesome/free-solid-svg-icons';
+import NavMenu from '../components/NavMenu';
+import ToggleTheme from '../components/ToggleTheme';
 
-import Button from '~/components/Button';
+import classNames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';
 
 const cx = classNames.bind(styles);
@@ -11,30 +10,9 @@ const cx = classNames.bind(styles);
 function DefaultLayout({ children }) {
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('list-menu')}>
-                <Button to="/" rounded className={cx('item-menu')}>
-                    <h2 className={cx('item-menu-title')}>Home</h2>
-                    <FontAwesomeIcon icon={faHouse} />
-                </Button>
-                <Button to="/portfolio" rounded className={cx('item-menu')}>
-                    <h2 className={cx('item-menu-title')}>Portfolio</h2>
-                    <FontAwesomeIcon icon={faBriefcase} />
-                </Button>
-                <Button to="/about" rounded className={cx('item-menu')}>
-                    <h2 className={cx('item-menu-title')}>About</h2>
-                    <FontAwesomeIcon icon={faUser} />
-                </Button>
-                <Button to="/contact" rounded className={cx('item-menu')}>
-                    <h2 className={cx('item-menu-title')}>Contact</h2>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                </Button>
-            </div>
+            <NavMenu />
 
-            <div className={cx('toggle-theme')}>
-                <Button className={cx('toggle-theme-btn')}>
-                    <FontAwesomeIcon icon={faMoon} />
-                </Button>
-            </div>
+            <ToggleTheme />
 
             <div className={cx('content')}>{children}</div>
         </div>

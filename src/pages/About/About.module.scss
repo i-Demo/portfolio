@@ -1,5 +1,6 @@
 .main {
-    padding: 0 30px;
+    padding: 0 30px 45px;
+    background-color: var(--body-bg);
 }
 
 .container {
@@ -164,6 +165,6 @@
         font-size: 26px;
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 45px;
+        // margin-bottom: 45px;
     }
 }

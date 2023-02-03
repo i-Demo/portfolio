@@ -1,22 +1,10 @@
 @import 'normalize.css';
 
 :root {
-    --main-color: #49c5b6;
-    --dark-color: #df6c4f;
-    // --primary: rgba(254, 44, 85, 1);
     --black: #000;
     --white: #fff;
-    --text-color: #666;
-    --menu-bg-color: #eee;
-    --toggle-color: #000;
-    --title-bg: rgba(30, 37, 48, 0.07);
-    --nav-bg-color: #eee;
 
     --font-family: 'ProximaNova', sans-serif;
-
-    // Default Layout
-    --default-layout-width: 1150px;
-    --default-layout-horizontal-spacer: 24px;
 }
 
 * {
@@ -29,12 +17,33 @@ html {
     font-size: 62.5%;
 }
 
+body[data-theme='light'] {
+    --main-color: #49c5b6;
+    --body-bg: white;
+    --text-color: #666;
+    --menu-bg-color: #eee;
+    --toggle-color: #000;
+    --title-bg: rgba(30, 37, 48, 0.07);
+    --title-btn: #000;
+    --nav-bg-color: #eee;
+}
+
+body[data-theme='dark'] {
+    --main-color: #df6c4f;
+    --body-bg: #111111;
+    --text-color: #fff;
+    --menu-bg-color: #2b2a2a;
+    --toggle-color: #252525;
+    --title-bg: hsla(0, 0%, 100%, 0.07);
+    --title-btn: #fff;
+    --nav-bg-color: #2b2a2a;
+}
+
 body {
     font-family: var(--font-family);
     font-size: 1.6rem;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
-    // overflow-y: overlay;
 }
 
 a[href] {

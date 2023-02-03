@@ -5,8 +5,12 @@
 }
 
 .main {
-    padding: 0 3rem;
-    margin: 45px;
+    background-color: var(--body-bg);
+    min-height: 100vh;
+}
+
+.content {
+    padding: 0 3rem 4.5rem;
 }
 
 .container {

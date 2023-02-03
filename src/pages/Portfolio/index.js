@@ -81,51 +81,53 @@ function Portfolio() {
 
     return (
         <div className={cx('main')}>
-            <div className={cx('page-header')}>
-                <h1>
-                    <span>My </span>
-                    portfolio
-                </h1>
-                <span>Works</span>
-            </div>
-
-            <div className={cx('container')}>
-                <div className={cx('tabs')}>
-                    <Button
-                        normal
-                        onClick={() => {
-                            setCurrentTab('all');
-                        }}
-                    >
-                        <span>All</span>
-                    </Button>
-                    <Button
-                        normal
-                        onClick={() => {
-                            setCurrentTab('css/js');
-                        }}
-                    >
-                        <span>CSS/Javascript</span>
-                    </Button>
-                    <Button
-                        normal
-                        onClick={() => {
-                            setCurrentTab('scss/react');
-                        }}
-                    >
-                        <span>Scss/React</span>
-                    </Button>
-                    <Button
-                        normal
-                        onClick={() => {
-                            setCurrentTab('restfulApi');
-                        }}
-                    >
-                        <span>Restful api</span>
-                    </Button>
+            <div className={cx('content')}>
+                <div className={cx('page-header')}>
+                    <h1>
+                        <span>My </span>
+                        portfolio
+                    </h1>
+                    <span>Works</span>
                 </div>
 
-                <div className={cx('tab-items')}>{currentTab === 'all' ? renderAllTab() : renderTab()}</div>
+                <div className={cx('container')}>
+                    <div className={cx('tabs')}>
+                        <Button
+                            normal
+                            onClick={() => {
+                                setCurrentTab('all');
+                            }}
+                        >
+                            <span>All</span>
+                        </Button>
+                        <Button
+                            normal
+                            onClick={() => {
+                                setCurrentTab('css/js');
+                            }}
+                        >
+                            <span>CSS/Javascript</span>
+                        </Button>
+                        <Button
+                            normal
+                            onClick={() => {
+                                setCurrentTab('scss/react');
+                            }}
+                        >
+                            <span>Scss/React</span>
+                        </Button>
+                        <Button
+                            normal
+                            onClick={() => {
+                                setCurrentTab('restfulApi');
+                            }}
+                        >
+                            <span>Restful api</span>
+                        </Button>
+                    </div>
+
+                    <div className={cx('tab-items')}>{currentTab === 'all' ? renderAllTab() : renderTab()}</div>
+                </div>
             </div>
         </div>
     );
