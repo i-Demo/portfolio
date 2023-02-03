@@ -81,7 +81,9 @@ function Portfolio() {
 
     return (
         <div className={cx('main')}>
-            <div className={cx('content')}>
+            <div className="slide"></div>
+
+            <div className={cx('content')} data-aos="fade-up">
                 <div className={cx('page-header')}>
                     <h1>
                         <span>My </span>

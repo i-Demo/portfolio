@@ -99,101 +99,105 @@ const SKILLS = [
 function About() {
     return (
         <div className={cx('main')}>
-            <div className={cx('page-header')}>
-                <h1>
-                    <span>About </span>
-                    Me
-                </h1>
-                <span>Resume</span>
-            </div>
+            <div data-aos="fade-up">
+                <div className="slide"></div>
 
-            <div className={cx('container')}>
-                <div className={cx('info')}>
-                    <div className={cx('info-basic')}>
-                        <h3>PERSONAL INFOS</h3>
+                <div className={cx('page-header')}>
+                    <h1>
+                        <span>About </span>
+                        Me
+                    </h1>
+                    <span>Resume</span>
+                </div>
 
-                        <ul className={cx('info-list')}>
-                            {INFORMATION.map((data, index) => {
+                <div className={cx('container')}>
+                    <div className={cx('info')}>
+                        <div className={cx('info-basic')} data-aos="fade-up-right">
+                            <h3>PERSONAL INFOS</h3>
+
+                            <ul className={cx('info-list')}>
+                                {INFORMATION.map((data, index) => {
+                                    return (
+                                        <li key={index}>
+                                            <span>{data.title} </span>
+                                            {data.info}
+                                        </li>
+                                    );
+                                })}
+
+                                <Button
+                                    href="https://drive.google.com/file/d/11v16ZXRyIwlk1zTtWB91AN1zn4hIuzaq/view?usp=sharing"
+                                    target="_blank"
+                                    slide
+                                    leftIcon={<FontAwesomeIcon icon={faDownload} />}
+                                >
+                                    <h2>Download Cv</h2>
+                                </Button>
+                            </ul>
+                        </div>
+
+                        <div className={cx('info-more')} data-aos="fade-up-left">
+                            <div className={cx('info-more-card')}>
+                                <h3>
+                                    1 <FontAwesomeIcon className={cx('icon')} icon={faPlus} />
+                                </h3>
+                                <p>
+                                    YEARS OF <span>EXPERIENCE</span>
+                                </p>
+                            </div>
+                            <div className={cx('info-more-card')}>
+                                <h3>
+                                    6 <FontAwesomeIcon className={cx('icon')} icon={faPlus} />
+                                </h3>
+                                <p>
+                                    COMPLETED <span>PROJECTs</span>
+                                </p>
+                            </div>
+                            <div className={cx('info-more-card')}>
+                                <h3>
+                                    1 <FontAwesomeIcon className={cx('icon')} icon={faPlus} />
+                                </h3>
+                                <p>
+                                    HAPPY <span>CUSTOMER</span>
+                                </p>
+                            </div>
+                            <div className={cx('info-more-card')}>
+                                <h3>
+                                    1 <FontAwesomeIcon className={cx('icon')} icon={faPlus} />
+                                </h3>
+                                <p>
+                                    AWARD <span>WON</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr className={cx('separator')} />
+
+                    <div className={cx('skills')}>
+                        <h3 className={cx('title')}>My Skills</h3>
+
+                        <div className={cx('skills-container')}>
+                            {SKILLS.map((skill, index) => {
                                 return (
-                                    <li key={index}>
-                                        <span>{data.title} </span>
-                                        {data.info}
-                                    </li>
+                                    <div key={index} className={cx('skill')} data-aos="fade-up">
+                                        <div className={cx('skill-wrapper')}>
+                                            <Image alt={skill.title} src={skill.src} className={cx('image')} />
+                                        </div>
+                                        <div className={cx('skill-name')}>
+                                            <h6>{skill.title}</h6>
+                                        </div>
+                                    </div>
                                 );
                             })}
-
-                            <Button
-                                href="https://drive.google.com/file/d/11v16ZXRyIwlk1zTtWB91AN1zn4hIuzaq/view?usp=sharing"
-                                target="_blank"
-                                slide
-                                leftIcon={<FontAwesomeIcon icon={faDownload} />}
-                            >
-                                <h2>Download Cv</h2>
-                            </Button>
-                        </ul>
-                    </div>
-
-                    <div className={cx('info-more')}>
-                        <div className={cx('info-more-card')}>
-                            <h3>
-                                1 <FontAwesomeIcon className={cx('icon')} icon={faPlus} />
-                            </h3>
-                            <p>
-                                YEARS OF <span>EXPERIENCE</span>
-                            </p>
-                        </div>
-                        <div className={cx('info-more-card')}>
-                            <h3>
-                                6 <FontAwesomeIcon className={cx('icon')} icon={faPlus} />
-                            </h3>
-                            <p>
-                                COMPLETED <span>PROJECTs</span>
-                            </p>
-                        </div>
-                        <div className={cx('info-more-card')}>
-                            <h3>
-                                1 <FontAwesomeIcon className={cx('icon')} icon={faPlus} />
-                            </h3>
-                            <p>
-                                HAPPY <span>CUSTOMER</span>
-                            </p>
-                        </div>
-                        <div className={cx('info-more-card')}>
-                            <h3>
-                                1 <FontAwesomeIcon className={cx('icon')} icon={faPlus} />
-                            </h3>
-                            <p>
-                                AWARD <span>WON</span>
-                            </p>
                         </div>
                     </div>
-                </div>
 
-                <hr className={cx('separator')} />
+                    <hr className={cx('separator')} />
 
-                <div className={cx('skills')}>
-                    <h3 className={cx('title')}>My Skills</h3>
-
-                    <div className={cx('skills-container')}>
-                        {SKILLS.map((skill, index) => {
-                            return (
-                                <div key={index} className={cx('skill')}>
-                                    <div className={cx('skill-wrapper')}>
-                                        <Image alt={skill.title} src={skill.src} className={cx('image')} />
-                                    </div>
-                                    <div className={cx('skill-name')}>
-                                        <h6>{skill.title}</h6>
-                                    </div>
-                                </div>
-                            );
-                        })}
+                    <div className={cx('experience')}>
+                        <h3 className={cx('title')}>experience</h3>
                     </div>
-                </div>
-
-                <hr className={cx('separator')} />
-
-                <div className={cx('experience')}>
-                    <h3 className={cx('title')}>experience</h3>
                 </div>
             </div>
         </div>
