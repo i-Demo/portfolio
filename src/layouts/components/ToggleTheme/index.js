@@ -10,13 +10,18 @@ import styles from './ToggleTheme.module.scss';
 const cx = classNames.bind(styles);
 
 function ToggleTheme() {
-    const [theme, setTheme] = useState('dark');
+    let localTheme = '';
+    localStorage.getItem('PortfolioTheme')
+        ? (localTheme = localStorage.getItem('PortfolioTheme'))
+        : (localTheme = 'dark');
+    const [theme, setTheme] = useState(localTheme);
 
     const handleToggleTheme = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
     };
 
     useEffect(() => {
+        localStorage.setItem('PortfolioTheme', theme);
         document.body.dataset.theme = theme;
     }, [theme]);
 

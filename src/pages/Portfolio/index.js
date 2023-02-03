@@ -8,8 +8,6 @@ import styles from './Portfolio.module.scss';
 
 const cx = classNames.bind(styles);
 
-console.log(images.portfolio);
-
 const PROJECT_ITEMS = [
     {
         id: 1,
