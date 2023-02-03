@@ -95,23 +95,23 @@ function Contact() {
                         </form>
                     </div>
                 </div>
-
-                {isShowModal && (
-                    <div className={cx('modal')}>
-                        <div className={cx('modal-wrapper')}>
-                            <div className={cx('modal-icon')}>
-                                <FontAwesomeIcon icon={faCheck} className={cx('icon')} />
-                            </div>
-                            <h3>Success!</h3>
-                            <p>We've sent a confirmation to your e-mail for verification.</p>
-                            <button className={cx('redo-btn')} onClick={() => setIsShowModal(false)}>
-                                Ok
-                            </button>
-                            <span className={cx('notice')}>-- Click to close the modal --</span>
-                        </div>
-                    </div>
-                )}
             </div>
+
+            {isShowModal && (
+                <div className={cx('modal')}>
+                    <div className={cx('modal-wrapper')}>
+                        <div className={cx('modal-icon')}>
+                            <FontAwesomeIcon icon={faCheck} className={cx('icon')} />
+                        </div>
+                        <h3>Success!</h3>
+                        <p>We've sent a confirmation to your e-mail for verification.</p>
+                        <button className={cx('redo-btn')} onClick={() => setIsShowModal(false)}>
+                            Ok
+                        </button>
+                        <span className={cx('notice')}>-- Click to close the modal --</span>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
