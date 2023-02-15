@@ -4,6 +4,7 @@ import { faDownload, faPlus } from '@fortawesome/free-solid-svg-icons';
 import Button from '~/components/Button';
 import Image from '~/components/Image';
 import { logo } from '~/assets/images';
+import PageHeader from '~/components/PageHeader';
 
 import classNames from 'classnames/bind';
 import styles from './About.module.scss';
@@ -98,17 +99,10 @@ const SKILLS = [
 
 function About() {
     return (
-        <div className={cx('main')}>
-            <div data-aos="fade-up">
-                <div className="slide"></div>
-
-                <div className={cx('page-header')}>
-                    <h1>
-                        <span>About </span>
-                        Me
-                    </h1>
-                    <span>Resume</span>
-                </div>
+        <div>
+            <div className="slide"></div>
+            <div className={cx('content')} data-aos="fade-up">
+                <PageHeader titleSpan="About" title="Me" titleBg="Resume" />
 
                 <div className={cx('container')}>
                     <div className={cx('info')}>

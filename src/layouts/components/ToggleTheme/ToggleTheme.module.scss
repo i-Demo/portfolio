@@ -15,3 +15,12 @@
         border-radius: 50%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .toggle-theme {
+        .toggle-theme-btn {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

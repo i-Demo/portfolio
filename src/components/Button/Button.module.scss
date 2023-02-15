@@ -230,6 +230,9 @@
 }
 
 @media only screen and (max-width: 767.98px) {
+    .wrapper {
+        min-width: unset;
+    }
     .slide {
         font-size: 0.8rem;
         min-width: 120px;
@@ -237,6 +240,14 @@
         .icon {
             width: 50px;
             height: 50px;
+        }
+    }
+    .normal {
+        width: 45%;
+        margin: 7px;
+        padding: 14px 21px;
+        & + .normal {
+            margin-left: 7px;
         }
     }
 }

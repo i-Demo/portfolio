@@ -11,7 +11,7 @@ const cx = classNames.bind(styles);
 
 function Home() {
     return (
-        <div className={cx('main')}>
+        <div>
             <div className="slide"></div>
 
             <div className={cx('container')} data-aos="fade-up">

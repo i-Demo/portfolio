@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Button from '~/components/Button';
+import PageHeader from '~/components/PageHeader';
 
 import classNames from 'classnames/bind';
 import styles from './Contact.module.scss';
@@ -22,17 +23,10 @@ function Contact() {
         setIsShowModal(true);
     };
     return (
-        <div className={cx('main')}>
-            <div data-aos="fade-up">
-                <div className="slide"></div>
-
-                <div className={cx('page-header')}>
-                    <h1>
-                        <span>Get in </span>
-                        touch
-                    </h1>
-                    <span>Contact</span>
-                </div>
+        <div>
+            <div className="slide"></div>
+            <div className={cx('content')} data-aos="fade-up">
+                <PageHeader titleSpan="Get in" title="touch" titleBg="Contact" />
 
                 <div className={cx('container')}>
                     <div className={cx('contact-info')}>
