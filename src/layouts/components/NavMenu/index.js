@@ -14,14 +14,17 @@ function NavMenu() {
                 <h2 className={cx('item-menu-title')}>Home</h2>
                 <FontAwesomeIcon icon={faHouse} />
             </Button>
+
             <Button to="/portfolio" rounded className={cx('item-menu')}>
                 <h2 className={cx('item-menu-title')}>Portfolio</h2>
                 <FontAwesomeIcon icon={faBriefcase} />
             </Button>
+
             <Button to="/about" rounded className={cx('item-menu')}>
                 <h2 className={cx('item-menu-title')}>About</h2>
                 <FontAwesomeIcon icon={faUser} />
             </Button>
+
             <Button to="/contact" rounded className={cx('item-menu')}>
                 <h2 className={cx('item-menu-title')}>Contact</h2>
                 <FontAwesomeIcon icon={faEnvelope} />

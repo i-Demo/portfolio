@@ -228,3 +228,15 @@
         transform: scaleX(1);
     }
 }
+
+@media only screen and (max-width: 767.98px) {
+    .slide {
+        font-size: 0.8rem;
+        min-width: 120px;
+
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

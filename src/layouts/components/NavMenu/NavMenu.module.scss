@@ -49,3 +49,32 @@
         }
     }
 }
+
+@media only screen and (max-width: 991.98px) {
+    .list-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: unset;
+        transform: unset;
+        background-color: #2b2a2a;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .item-menu {
+        background-color: #444;
+        color: #fff;
+        margin: 8px;
+        min-width: 30px;
+        width: 45px;
+        height: 45px;
+        &:hover {
+            .item-menu-title {
+                display: none;
+            }
+        }
+    }
+}

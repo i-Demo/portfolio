@@ -39,12 +39,14 @@ function Home() {
                                 và đương đầu với những khó khăn, thử thách sắp tới trong tương lai. Fighting!
                             </p>
 
-                            <Button to="/portfolio" slide leftIcon={<FontAwesomeIcon icon={faArrowRight} />}>
-                                <h2>Portfolio</h2>
-                            </Button>
-                            <Button to="/about" slide leftIcon={<FontAwesomeIcon icon={faArrowRight} />}>
-                                <h2>About</h2>
-                            </Button>
+                            <div className={cx('btn-block')}>
+                                <Button to="/portfolio" slide leftIcon={<FontAwesomeIcon icon={faArrowRight} />}>
+                                    <h2>Portfolio</h2>
+                                </Button>
+                                <Button to="/about" slide leftIcon={<FontAwesomeIcon icon={faArrowRight} />}>
+                                    <h2>About</h2>
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>
