@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from '~/components/Button';
+import TabMenuItem from './TabMenuItem';
 import Image from '~/components/Image';
 import { images } from '~/assets/images';
 import PageHeader from '~/components/PageHeader';
@@ -86,40 +86,40 @@ function Portfolio() {
                 <PageHeader titleSpan="My" title="portfolio" titleBg="Works" />
 
                 <div className={cx('container')}>
-                    <div className={cx('tabs')}>
-                        <Button
-                            normal
+                    <nav className={cx('tabs')}>
+                        <TabMenuItem
+                            className={currentTab === 'all' ? 'active' : ''}
                             onClick={() => {
                                 setCurrentTab('all');
                             }}
-                        >
-                            <span>All</span>
-                        </Button>
-                        <Button
-                            normal
+                            title="All"
+                        />
+
+                        <TabMenuItem
+                            className={currentTab === 'css/js' ? 'active' : ''}
                             onClick={() => {
                                 setCurrentTab('css/js');
                             }}
-                        >
-                            <span>CSS/Javascript</span>
-                        </Button>
-                        <Button
-                            normal
-                            onClick={() => {
+                            title="CSS/Javascript"
+                        />
+
+                        <TabMenuItem
+                            className={currentTab === 'scss/react' ? 'active' : ''}
+                            onClick={(e) => {
                                 setCurrentTab('scss/react');
+                                console.log(e);
                             }}
-                        >
-                            <span>Scss/React</span>
-                        </Button>
-                        <Button
-                            normal
+                            title="Scss/React"
+                        />
+
+                        <TabMenuItem
+                            className={currentTab === 'restfulApi' ? 'active' : ''}
                             onClick={() => {
                                 setCurrentTab('restfulApi');
                             }}
-                        >
-                            <span>Restful api</span>
-                        </Button>
-                    </div>
+                            title="Restful api"
+                        />
+                    </nav>
 
                     <div className={cx('tab-items')}>{currentTab === 'all' ? renderAllTab() : renderTab()}</div>
                 </div>

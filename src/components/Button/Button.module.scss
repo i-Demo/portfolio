@@ -33,45 +33,45 @@
 // }
 
 // Button types
-.rounded {
-    color: var(--text-color);
-    background-color: var(--menu-bg-color);
-    width: 50px;
-    height: 50px;
-    margin: 10px 0;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
-    outline: none;
-    border: none;
+// .rounded {
+//     color: var(--text-color);
+//     background-color: var(--menu-bg-color);
+//     width: 50px;
+//     height: 50px;
+//     margin: 10px 0;
+//     border-radius: 50%;
+//     box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+//     outline: none;
+//     border: none;
 
-    &:hover {
-        border-color: rgba(22, 24, 35, 0.2);
-        // background-color: rgba(22, 24, 35, 0.03);
-    }
-}
+//     &:hover {
+//         border-color: rgba(22, 24, 35, 0.2);
+//         // background-color: rgba(22, 24, 35, 0.03);
+//     }
+// }
 
-.normal {
-    background-color: var(--title-bg);
-    border-radius: 10px;
-    color: var(--title-btn);
-    font-family: Poppins, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 12px 16px;
-    margin-bottom: 3rem;
-    transition: all 0.3s ease;
+// .normal {
+//     background-color: var(--title-bg);
+//     border-radius: 10px;
+//     color: var(--title-btn);
+//     font-family: Poppins, sans-serif;
+//     font-size: 1.4rem;
+//     font-weight: 600;
+//     text-transform: uppercase;
+//     padding: 12px 16px;
+//     margin-bottom: 3rem;
+//     transition: all 0.3s ease;
 
-    &:hover {
-        background-color: var(--main-color);
-        color: var(--white);
-        cursor: pointer;
-    }
+//     &:hover {
+//         background-color: var(--main-color);
+//         color: var(--white);
+//         cursor: pointer;
+//     }
 
-    & + .normal {
-        margin-left: 30px;
-    }
-}
+//     & + .normal {
+//         margin-left: 30px;
+//     }
+// }
 
 .slide {
     position: relative;

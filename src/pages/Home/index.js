@@ -31,12 +31,12 @@ function Home() {
                                 <span>Web Developer !</span>
                             </h1>
                             <p>
-                                Hello mọi người! Mình là Vĩ, đang là sinh viên năm cuối trường Đại học Giao thông vận
-                                tải Tp. HCM. Cơ duyên mình đến với IT là nhờ các sự tích "IT là vua của các nghề", hay
-                                câu chuyện "thằng em học BK cơ khí sinh năm 96". Mình đã tìm tòi và học hỏi được nhiều
-                                kiến thức về Web Developer (FE: ReactJs, BE: NodeJs), qua đó cũng có cho mình được một
-                                vài project thú vị. Với sức trẻ và sự sáng tạo, mình đã sẵn sàng thực hiện những đam mê
-                                và đương đầu với những khó khăn, thử thách sắp tới trong tương lai. Fighting!
+                                Hello! I’m Vĩ. My full name is Hồ Lê Hoài Vĩ. I’m 23. I graduated from Ho Chi Minh City
+                                University of Transport in 2023 with a bachelor’s degree in Infomation Technology major.
+                                With over 2 years of studying and practising as a Frontend Developer, I’m confident
+                                about my professional skills and my soft skills. I believe that if we want to work
+                                effectively and develop ourselves, carefulness and creativity is very important. That’s
+                                what I would like to share about myself.
                             </p>
 
                             <div className={cx('btn-block')}>
