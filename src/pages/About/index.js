@@ -18,7 +18,7 @@ const INFORMATION = [
     },
     {
         title: 'Last Name:',
-        info: 'Ho',
+        info: 'Ho Le Hoai',
     },
     {
         title: 'Birthday:',
@@ -38,7 +38,7 @@ const INFORMATION = [
     },
     {
         title: 'Phone:',
-        info: '0363629xxx',
+        info: '0363629439',
     },
     {
         title: 'Facebook:',

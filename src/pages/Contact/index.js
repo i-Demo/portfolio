@@ -43,11 +43,11 @@ function Contact() {
                             </li>
                             <li>
                                 <FontAwesomeIcon className={cx('contact-icon')} icon={faEnvelopeOpen} />
-                                <span>Email</span> hoaivi.dev@gmail.com
+                                <span>Email</span> hoaivi.it@gmail.com
                             </li>
                             <li>
                                 <FontAwesomeIcon className={cx('contact-icon')} icon={faPhoneVolume} />
-                                <span>Phone</span> 0363629xxx
+                                <span>Phone</span> 0363629439
                             </li>
                         </ul>
 
