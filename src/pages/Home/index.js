@@ -19,7 +19,7 @@ function Home() {
     });
     const [infoPerson] = useTypewriter({
         words: [
-            `Hello! I’m Vĩ. My full name is Hồ Lê Hoài Vĩ. I’m 23. I graduated from Ho Chi Minh City
+            `I’m Vĩ. My full name is Hồ Lê Hoài Vĩ. I’m 23. I graduated from Ho Chi Minh City
         University of Transport in 2023 with a bachelor’s degree in Infomation Technology major.
         With over 2 years of studying and practising as a Frontend Developer, I’m confident
         about my professional skills and my soft skills. I believe that if we want to work
