@@ -22,7 +22,7 @@ const PROJECT_ITEMS = [
         tech: ['scss/react'],
         name: 'MUSIC WEB',
         img: images.musicApp,
-        url: 'https://idemomusic.vercel.app/',
+        url: 'https://idemomusic.netlify.app/',
     },
 
     {
