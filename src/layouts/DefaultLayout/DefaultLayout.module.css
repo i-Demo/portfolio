@@ -1,0 +1,9 @@
+.wrapper {
+  position: relative;
+}
+
+.content {
+  overflow: hidden;
+  background-color: var(--body-bg);
+  min-height: 100vh;
+}/*# sourceMappingURL=DefaultLayout.module.css.map */

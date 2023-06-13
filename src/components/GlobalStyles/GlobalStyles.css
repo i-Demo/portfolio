@@ -1,0 +1,112 @@
+@import 'normalize.css';
+:root {
+  --black: #000;
+  --white: #fff;
+  --font-family: "ProximaNova", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body[data-theme=light] {
+  --main-color: #49c5b6;
+  --body-bg: white;
+  --text-color: #666;
+  --menu-bg-color: #eee;
+  --toggle-color: #000;
+  --title-bg: rgba(30, 37, 48, 0.07);
+  --title-btn: #000;
+  --nav-bg-color: #eee;
+}
+
+body[data-theme=dark] {
+  --main-color: #df6c4f;
+  --body-bg: #111111;
+  --text-color: #fff;
+  --menu-bg-color: #2b2a2a;
+  --toggle-color: #252525;
+  --title-bg: hsla(0, 0%, 100%, 0.07);
+  --title-btn: #fff;
+  --nav-bg-color: #2b2a2a;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  text-rendering: optimizeSpeed;
+  color: var(--text-color);
+  overflow-y: overlay;
+}
+
+a[href] {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("/assets/fonts/Proxima-Nova-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url("/assets/fonts/ProximaNova-Semibold.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url("/assets/fonts/Proxima-Nova-Bold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: SofiaPro;
+  src: url("/assets/fonts/sofiapro-bold.woff2");
+  font-weight: 700;
+}
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 6px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  background-clip: content-box;
+  border-radius: 20px;
+}
+
+html *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slide {
+  background-color: var(--nav-bg-color);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9998;
+  animation: slide 0.5s cubic-bezier(1, -0.01, 0.64, 1.02) forwards;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+  99% {
+    opacity: 1;
+    top: 99%;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    top: 100%;
+  }
+}/*# sourceMappingURL=GlobalStyles.css.map */

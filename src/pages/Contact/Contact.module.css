@@ -1,0 +1,198 @@
+.content {
+  padding: 0 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .contact-info {
+  width: 33.3333%;
+  padding: 0 15px;
+}
+.container .contact-info h3 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.container .contact-info p {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.container .contact-info .contact-list {
+  list-style: none;
+}
+.container .contact-info .contact-list li {
+  position: relative;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+}
+.container .contact-info .contact-list li .contact-icon {
+  color: var(--main-color);
+  font-size: 3.2rem;
+  left: 0;
+  position: absolute;
+  top: 4px;
+}
+.container .contact-info .contact-list li span {
+  color: var(--text-color);
+  display: block;
+  font-weight: 400;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+.container .contact-info .social-list .social-btn + .social-btn {
+  margin-left: 15px;
+}
+.container .contact-info .social-list .social-btn:hover {
+  background-color: var(--main-color);
+  color: var(--black);
+}
+.container .form-container {
+  width: 66.6666%;
+  padding: 0 15px;
+}
+.container .form-container input,
+.container .form-container textarea {
+  width: calc(50% - 15px);
+  background-color: var(--nav-bg-color);
+  border: 1px solid var(--nav-bg-color);
+  border-radius: 30px;
+  color: var(--txt-color);
+  font-size: 15px;
+  outline: none !important;
+  padding: 1.5rem 3rem;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+.container .form-container input:focus,
+.container .form-container textarea:focus {
+  border-color: var(--main-color);
+}
+.container .form-container input::-moz-placeholder, .container .form-container textarea::-moz-placeholder {
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.container .form-container input::placeholder,
+.container .form-container textarea::placeholder {
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.container .form-container .contact-form_info {
+  display: flex;
+  justify-content: space-between;
+}
+.container .form-container .contact-form_subject input {
+  width: 100%;
+}
+.container .form-container .contact-form_message textarea {
+  width: 100%;
+  height: 200%;
+}
+.container .form-container .contact-form-btn {
+  margin-bottom: 30px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+.modal .modal-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 25px 25px 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.modal .modal-wrapper .modal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4caf50;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: -75px auto 0;
+}
+.modal .modal-wrapper .modal-icon .icon {
+  color: #fff;
+  font-size: 5rem;
+}
+.modal .modal-wrapper h3 {
+  color: #333;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.modal .modal-wrapper p {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+.modal .modal-wrapper .redo-btn {
+  background: transparent;
+  border: 1px solid #4caf50;
+  border-radius: 30px;
+  color: #4caf50;
+  outline: none;
+  padding: 7.5px 15px;
+  transition: all 0.3s;
+  width: 75%;
+}
+.modal .modal-wrapper .redo-btn:hover {
+  background-color: #4caf50;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.modal .modal-wrapper .notice {
+  color: #666;
+  display: block;
+  font-size: 1.3rem;
+  margin-top: 4px;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 991.98px) {
+  .content {
+    padding: 65px 32px 80px;
+  }
+  .container .contact-info {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .container .form-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .content {
+    padding: 52px 14px 80px;
+  }
+  .container .contact-info,
+  .container .form-container {
+    padding: unset;
+  }
+  .container .form-container input {
+    width: 100%;
+  }
+  .container .form-container .contact-form_info {
+    display: block;
+  }
+}/*# sourceMappingURL=Contact.module.css.map */

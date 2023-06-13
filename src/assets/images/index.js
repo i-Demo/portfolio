@@ -7,6 +7,7 @@ const images = {
     gamePage: require('~/assets/images/gamepage.jpg'),
     macStore: require('~/assets/images/macStore.jpg'),
     musicPlayer: require('~/assets/images/musicplayer.jpg'),
+    musicApp: require('~/assets/images/musicapp.png'),
 };
 
 const logo = {

@@ -15,12 +15,14 @@ const PROJECT_ITEMS = [
         tech: ['scss/react', 'restfulApi'],
         name: 'Movie App',
         img: images.movie,
+        url: 'https://movie-298.netlify.app/',
     },
     {
         id: 2,
         tech: ['scss/react'],
-        name: 'Game Page Landing',
-        img: images.gamePage,
+        name: 'MUSIC WEB',
+        img: images.musicApp,
+        url: 'https://idemomusic.vercel.app/',
     },
 
     {
@@ -28,6 +30,7 @@ const PROJECT_ITEMS = [
         tech: ['scss/react'],
         name: 'My Portfolio',
         img: images.portfolio,
+        url: 'https://portfoliohoaivi.netlify.app/',
     },
     {
         id: 4,
@@ -40,6 +43,7 @@ const PROJECT_ITEMS = [
         tech: ['css/js'],
         name: 'Music Player',
         img: images.musicPlayer,
+        url: 'https://i-demo.github.io/Music-Player/',
     },
 
     {
@@ -47,6 +51,7 @@ const PROJECT_ITEMS = [
         tech: ['css/js', 'restfulApi'],
         name: 'E-Commerce',
         img: images.eCommerce,
+        url: 'https://pvshop.netlify.app/',
     },
 ];
 
@@ -56,10 +61,10 @@ function Portfolio() {
     const renderAllTab = () => {
         return PROJECT_ITEMS.map((item) => {
             return (
-                <div key={item.id} className={cx('tab-item')}>
+                <a href={item.url} target="_blank" rel="noreferrer" key={item.id} className={cx('tab-item')}>
                     <Image alt="TabItem" src={item.img} className={cx('background')} />
                     <h3>{item.name}</h3>
-                </div>
+                </a>
             );
         });
     };
@@ -69,10 +74,16 @@ function Portfolio() {
         return PROJECT_ITEMS.map((item) => {
             if (item.tech.includes(currentTab)) {
                 return (
-                    <div key={`${currentTab} ${item.id}`} className={cx('tab-item')}>
+                    <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        key={`${currentTab} ${item.id}`}
+                        className={cx('tab-item')}
+                    >
                         <Image alt="TabItem" src={item.img} className={cx('background')} />
                         <h3>{item.name}</h3>
-                    </div>
+                    </a>
                 );
             }
         });

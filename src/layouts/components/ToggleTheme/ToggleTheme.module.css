@@ -1,0 +1,22 @@
+.toggle-theme {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 999;
+  transition: all 0.5s ease;
+}
+.toggle-theme .toggle-theme-btn {
+  font-size: 2.4rem;
+  width: 50px;
+  height: 50px;
+  background-color: var(--toggle-color);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .toggle-theme .toggle-theme-btn {
+    width: 40px;
+    height: 40px;
+  }
+}/*# sourceMappingURL=ToggleTheme.module.css.map */
